@@ -69,6 +69,7 @@ function getSelect() {
 
 button.addEventListener('click', function () {
     let answer = getSelect();
+    // let answer;
     console.log(answer)
     console.log(quizData)
     console.log(quizData[currentquizCount].correct)
@@ -84,7 +85,7 @@ button.addEventListener('click', function () {
         else {
             quizContainer.innerHTML = `
                 <h1>You have scored ${score}/${quizData.length}</h1>
-                <button onclick='location.reload()'>Reload</button>
+                <button class="btn btn-primary mt-3 mb-3 px-5" type="button" onclick='location.reload()'>Reload</button>
                 `
         }
 
